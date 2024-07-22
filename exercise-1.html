@@ -15,18 +15,18 @@
 
         <!-- Nombre del producto -->
         <label for="title">Nombre del producto:</label>
-        <input type="text" id="title" name="title" pattern="cambiar" required>
+        <input type="text" id="title" name="title" pattern="^[a-zA-Z0-9\- ]+$" required>
         <small>Solamente puede contener carácteres, números, guión normal y espacios en blanco</small>
 
 
         <!-- Precio del producto -->
         <label for="input">Precio:</label>
-        <input type="text" id="date" name="date" pattern="cambiar" required>
+        <input type="text" id="date" name="date" pattern="^\d+(\.\d{1,2})?$" required>
         <small>Formatos aceptados: 12.49 | 15.3 | 20</small>
 
         <!-- FEcha de alta -->
         <label for="date">Fecha (DD/MM/YYYY):</label>
-        <input type="text" id="date" name="date" pattern="cambiar" required>
+        <input type="text" id="date" name="date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" required>
         <small>Formato: 31/12/2024 . Nota: Solamente puedes comprobar el formato en el atributo pattern, no puedes
             comprobar si un día es correcto para un mes en concreto. </small>
 

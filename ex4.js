@@ -8,7 +8,7 @@
 
 function stringClean(s) {
     // Cambia únicamente la siguiente línea
-    const regex = /changeme/g;
+    const regex = /\d/g;
 
     //https://javascript.info/regexp-methods#str-replace-str-regexp-str-func
     return s.replace(regex, '');

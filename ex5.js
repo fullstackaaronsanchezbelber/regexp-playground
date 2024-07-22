@@ -8,7 +8,14 @@
 
 
 function extractHexColors(s) {
-    /** Modifica solamente el cuerpo de la función */
+    // La expresión regular para encontrar colores hexadecimales
+    const regex = /#[a-fA-F0-9]{6}/g;
+    
+    // Usamos el método match para encontrar todas las coincidencias
+    const matches = s.match(regex);
+    
+    // Si no se encontraron coincidencias, devolvemos un array vacío
+    return matches || [];
 }
 
 // Juegos de pruebas

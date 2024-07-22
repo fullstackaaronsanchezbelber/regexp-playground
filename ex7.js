@@ -6,6 +6,12 @@
 
 function isSubstring(s1, s2) {
 
+    // Crear una expresión regular a partir de s2
+    const regex = new RegExp(s2);
+    
+    // Usar el método test para verificar si s2 es un substring de s1
+    return regex.test(s1);
+
 }
 
 // Prueba 1: Substring presente en la cadena principal
